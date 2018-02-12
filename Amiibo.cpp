@@ -73,6 +73,8 @@ bool Amiibo::read()
   if (this->getByteAt(22, 3) != 0x02) {
     return false;
   }
+
+  return true;
 }
 
 bool Amiibo::readFull()
